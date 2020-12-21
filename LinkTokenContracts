@@ -1,0 +1,69 @@
+LINK Token Contracts
+SUGGEST EDITS
+LINK tokens are used to pay node operators for retrieving data for smart contracts and also for deposits placed by node operators as required by contract creators.
+
+The LINK token is an ERC677 token that inherits functionality from the ERC20 token standard and allows token transfers to contain a data payload. Read more about the ERC677 transferAndCall token standard.
+
+Ethereum
+Mainnet
+Parameter	Value
+Address	0x514910771af9ca656af840dff83e8264ecf986ca
+Name	ChainLink Token
+Symbol	LINK
+Decimals	18
+Kovan
+🚰
+Kovan Faucets
+
+Testnet LINK is available from https://kovan.chain.link/
+Testnet ETH is available from https://faucet.kovan.network/
+
+Parameter	Value
+Address	0xa36085F69e2889c224210F603D836748e7dC0088
+Name	ChainLink Token
+Symbol	LINK
+Decimals	18
+Rinkeby
+🚰
+Rinkeby Faucets
+
+Testnet LINK is available from https://rinkeby.chain.link/
+Testnet ETH is available from https://faucet.rinkeby.io/
+
+Parameter	Value
+Address	0x01BE23585060835E02B77ef475b0Cc51aA1e0709
+Name	ChainLink Token
+Symbol	LINK
+Decimals	18
+Goerli
+Parameter	Value
+Address	0x326c977e6efc84e512bb9c30f76e30c160ed06fb
+Name	ChainLink Token
+Symbol	LINK
+Decimals	18
+Binance Smart Chain
+Mainnet
+Parameter	Value
+Address	0x404460c6a5ede2d891e8297795264fde62adbb75
+Name	ChainLink Token
+Symbol	LINK
+Decimals	18
+Matic
+Mainnet
+Parameter	Value
+Address	0xb0897686c545045afc77cf20ec7a532e3120e0f1
+Name	ChainLink Token
+Symbol	LINK
+Decimals	18
+RSK
+Mainnet
+🌉
+Token Bridge
+
+Supported token bridge at https://tokenbridge.rsk.co/
+
+Parameter	Value
+Address	0x14adae34bef7ca957ce2dde5add97ea050123827
+Name	rLINK
+Symbol	rLINK
+Decimals	18
