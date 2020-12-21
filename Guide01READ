@@ -1,4 +1,4 @@
-This is the guide for developing with Chainlink on the ethereum virtual machine programming in Solidity with an example Get request, Code, and API call for Testing 
+This is my guide for developing with Chainlink on the ethereum virtual machine programming in Solidity with an example Get request, Code, and API call for Testing 
 Remix.ethereum.org
 
 
@@ -62,6 +62,7 @@ Below is a UML diagram describing the contract structure of ATestnetConsumer, a 
 Make a GET Request
 SUGGEST EDITS
 This page explains how to make an HTTP GET request to an external API from a smart contract, using Chainlink's Request & Receive Data cycle.
+
 Copy and Paste the Code Below in Remix.ethereum.org to Test
 
 pragma solidity ^0.6.0;
@@ -149,6 +150,8 @@ If an API responds with a complex JSON object, the "path" parameter would need t
         "USD":243.33
     }
 }
+
+
 This would require the following path: "Prices.USD".
 
 Response Types
@@ -161,6 +164,8 @@ bytes32 - Strings and byte values
 If you need to return a string, use bytes32. Here's one method of converting bytes32 to string.
 
 The data type returned by a specific job depends on the adapters that it supports. Make sure to choose an oracle job that supports the data type that your contract needs to consume.
+
+
 
 Choosing an Oracle Job
 If your contract is calling a public API endpoint, an Oracle job may already exist for it. If so, it could mean you do not need to add the URL, or other adapter parameters into the request, since the job already configured to return the desired data. This makes your smart contract code more succinct. To see an example of a contract using an existing job which calls the CoinGecko API, see Make an Existing Job Request.
