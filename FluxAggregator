@@ -1,0 +1,68 @@
+This page outlines the uses of the FluxAggregator contract for the node operators that feed data into it.
+
+Withdrawing funds
+🚧
+Keep in mind the oracle variable is currently your node's address rather than your oracle contract's address.
+
+You'll need the following interface. Compile the code below. Any Solidity version greater than 0.5.0 should work fine:
+
+pragma solidity >=0.5.0;
+
+interface FluxAggregatorNode {
+    function withdrawablePayment(address oracle) external view returns (uint256);
+    function withdrawPayment(address oracle, address recipient, uint256 amount) external;
+}
+
+You can throw that into Remix and use the At Address with the address of the FluxAggregator to be able to call the functions.
+
+
+If using a tool which requires the ABI, you can use this:
+
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "oracle",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "withdrawPayment",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "oracle",
+                "type": "address"
+            }
+        ],
+        "name": "withdrawablePayment",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
